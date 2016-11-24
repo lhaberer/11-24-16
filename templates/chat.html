@@ -1,0 +1,19 @@
+<ion-view title="Chat" id="page11">
+  <ion-content padding="false" scroll="false" class="has-header">
+    <ion-scroll id="chat-container1" class="top-container">
+      <ion-list id="chat-list6">
+        <ion-item class="item-avatar" id="chat-list-item1" ng-repeat="message in messages" gravatar-src="message.email">
+          <h2>{{message.name}}</h2>
+          <p>{{message.text}}</p>
+        </ion-item>
+      </ion-list>
+    </ion-scroll>
+    <form id="chat-form6" class="list bottom-form" ng-submit="addMessage()">
+      <label class="item item-input" id="chat-input16">
+        <span class="input-label">Message:</span>
+        <input type="text" placeholder="" ng-model="data.message">
+      </label>
+      <button id="chat-button15" class="button button-assertive  button-full">Submit</button>
+    </form>
+  </ion-content>
+</ion-view>

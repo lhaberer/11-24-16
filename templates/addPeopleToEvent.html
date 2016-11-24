@@ -1,0 +1,36 @@
+<ion-view title="Add People to Event" id="page13">
+  <ion-content padding="true" style="background: url(img/f0hoKou5TSug4FdDztLw_NewBlackOrangeBackground.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <div id="addPeopleToEvent-markdown7" class="show-list-numbers-and-dots"></div>
+    <form id="addPeopleToEvent-form11" class="list">
+      <label class="item item-input" id="addPeopleToEvent-input24">
+        <span class="input-label">Name:</span>
+        <input type="text" placeholder="" ng-model="data.name">
+      </label>
+      <div id="addPeopleToEvent-markdown8" class="show-list-numbers-and-dots"></div>
+      <label class="item item-select" id="addPeopleToEvent-select2">
+        <span class="input-label">Did they show up?</span>
+        <select ng-model="data.show_up">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+      <label class="item item-select" id="addPeopleToEvent-select3">
+        <span class="input-label">Where did they enter?</span>
+        <select ng-model="data.enter_location">
+          <option>Front Entry</option>
+          <option>Side Entry</option>
+          <option>Back Entry</option>
+        </select>
+      </label>
+      <label class="item item-select" id="addPeopleToEvent-select4">
+        <span class="input-label">Have they left yet?</span>
+        <select ng-model="data.departure_time"></select>
+      </label>
+      <label class="item item-input" id="addPeopleToEvent-input27">
+        <span class="input-label">Time of departure:</span>
+        <input type="text" placeholder="" ng-model="data.time">
+      </label>
+    </form>
+    <button id="addPeopleToEvent-button18" class="button button-stable  button-block">Save Info</button>
+  </ion-content>
+</ion-view>

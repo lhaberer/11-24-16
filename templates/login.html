@@ -1,0 +1,25 @@
+<ion-view title="Login" hide-nav-bar="true" cache-view="false" nav-transition="none" id="page8">
+  <ion-content padding="true" style="background: url(img/lBF7S4DGQHXtmZY7GcgD_orange20and20black.jpg) no-repeat center;background-size:cover;" class="manual-ios-statusbar-padding" scroll="false">
+    <div id="login-markdown1" ng-if="error" class="show-list-numbers-and-dots error-box">
+      <p style="color:#050200;">{{error}}</p>
+    </div>
+    <form id="login-form4" class="list center-form">
+      <div>
+        <img src="img/iD9SUc4pQYGxO8Ex7n6M_4.png" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;">
+      </div>
+      <ion-list id="login-list4">
+        <label class="item item-input top-input" id="login-input10">
+          <span class="input-label">Email</span>
+          <input type="email" placeholder="" ng-model="data.email">
+        </label>
+        <label class="item item-input bottom-input" id="login-input11">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="" ng-model="data.password">
+        </label>
+      </ion-list>
+      <button id="login-button8" ng-click="login()" class="button button-stable  button-block">Log in</button>
+      <a ui-sref="signUp" id="login-button9" class="button button-assertive  button-block button-clear">Or create an account</a>
+      <a ui-sref="tabsController.myProfile" id="login-button10" class="button button-assertive  button-block button-clear">Alpha Testing Click Here!</a>
+    </form>
+  </ion-content>
+</ion-view>

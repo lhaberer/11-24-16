@@ -1,0 +1,29 @@
+<ion-view title="Sign Up" hide-nav-bar="true" cache-view="false" nav-transition="none" id="page9">
+  <ion-content padding="true" style="background: url(img/lBF7S4DGQHXtmZY7GcgD_orange20and20black.jpg) no-repeat center;background-size:cover;" class="manual-ios-statusbar-padding" scroll="false">
+    <div id="signUp-markdown3" ng-if="error" class="show-list-numbers-and-dots error-box">
+      <p style="color:#000000;">{{error}}</p>
+    </div>
+    <form id="signUp-form5" class="list center-form">
+      <div>
+        <img src="img/iD9SUc4pQYGxO8Ex7n6M_4.png" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;">
+      </div>
+      <ion-list id="signUp-list5">
+        <label class="item item-input top-input" id="signUp-input12">
+          <span class="input-label">Name:</span>
+          <input type="text" placeholder="" ng-model="data.name">
+        </label>
+        <label class="item item-input" id="signUp-input14">
+          <span class="input-label">Email:</span>
+          <input type="text" placeholder="" ng-model="data.email">
+        </label>
+        <label class="item item-input bottom-input" id="signUp-input13">
+          <span class="input-label">Password:</span>
+          <input type="password" placeholder="" ng-model="data.password">
+        </label>
+      </ion-list>
+      <button id="signUp-button11" ng-click="signup()" class="button button-stable  button-block">signup</button>
+      <a ui-sref="tabsController.myProfile" id="signUp-button14" class="button button-assertive  button-block button-clear">I Have An Account</a>
+      <a ui-sref="tabsController.myProfile" id="signUp-button13" class="button button-assertive  button-block button-clear">Alpha Testing Click Here!</a>
+    </form>
+  </ion-content>
+</ion-view>

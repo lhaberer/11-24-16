@@ -1,0 +1,24 @@
+<ion-view title="Create Event" id="page3">
+  <ion-content padding="true" style="background: url(img/f0hoKou5TSug4FdDztLw_NewBlackOrangeBackground.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <div id="createEvent-markdown5" class="show-list-numbers-and-dots"></div>
+    <form id="createEvent-form8" class="list">
+      <label class="item item-input" id="createEvent-input19">
+        <span class="input-label">Name of Event:</span>
+        <input type="text" placeholder="">
+      </label>
+      <label class="item item-input" id="createEvent-input21">
+        <span class="input-label">Location of Event:</span>
+        <input type="text" placeholder="">
+      </label>
+    </form>
+    <creator-map-component options="{}" marker="true" location="Madison Capital" zoom="12" style="display:block;position:relative;width:100%;height:300px;">
+      <ui-gmap-google-map ng-if="map.center" center="map.center" zoom="map.zoom" options="map.options">
+        <ui-gmap-marker coords="map.marker.coords" idkey="map.marker.id" options="map.marker.options"></ui-gmap-marker>
+      </ui-gmap-google-map>
+    </creator-map-component>
+    <form id="createEvent-form9" class="list">
+      <div class="spacer" style="width: 300px; height: 34px;"></div>
+      <a ui-sref="tabsController.addPeopleToEvent" id="createEvent-button16" class="button button-stable  button-block">Add People to Event</a>
+    </form>
+  </ion-content>
+</ion-view>
